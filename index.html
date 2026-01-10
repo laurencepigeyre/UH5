@@ -52,7 +52,7 @@
         <img src="img/home.webp" alt="home image" class="w-full h-auto object-cover" />
         <div class="mx-4 md:mx-30 lg:mx-48 text-center my-10">
             <div class="opacity-0 scroll-fade fade-left">
-                <h1 id="identité" class="text-3xl md:scroll-mt-24">ATTENTION, NOUVELLE ADRESSE</h1>
+                <h1 id="identité" class="text-3xl scroll-mt-24">ATTENTION, NOUVELLE ADRESSE</h1>
                 <p><br>Retrouvez-nous au 85, rue Saint-Charles, 59110 La Madeleine, France <br><br>
                     Si vous venez en voiture <br>
                     GPS : En face du 78, rue Saint-Charles, 59110 La Madeleine, France <br> <br>
@@ -93,7 +93,7 @@
                 </p>
             </div>
         </div>
-        <div id="presentation" class="bg-zinc-100 md:scroll-mt-15">
+        <div id="presentation" class="bg-zinc-100 md:scroll-mt-15 scroll-mt-7">
             <div class="flex flex-col md:flex-row justify-center p-5 items-center md:items-start">
                 <!-- Personne 1 -->
                 <div class="flex flex-col items-center p-6 w-full max-w-xs">
@@ -142,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row gap-6 md:scroll-mt-15" id="tirage-fine-art">
+        <div class="flex flex-col md:flex-row gap-6 scroll-mt-15" id="tirage-fine-art">
 
             <!-- Colonne gauche -->
             <div class="md:w-1/2 flex flex-col justify-center p-6">
@@ -170,7 +170,7 @@
             </div>
 
         </div>
-        <div class="flex flex-col md:flex-row-reverse gap-6 md:scroll-mt-15" id="contrecollage">
+        <div class="flex flex-col md:flex-row-reverse gap-6 scroll-mt-15" id="contrecollage">
 
             <!-- Colonne gauche -->
             <div class="md:w-1/2 flex flex-col justify-center p-6">
@@ -195,7 +195,7 @@
             </div>
 
         </div>
-        <div class="flex flex-col md:flex-row gap-6 md:scroll-mt-15" id="encadrement">
+        <div class="flex flex-col md:flex-row gap-6 scroll-mt-15" id="encadrement">
 
             <!-- Colonne gauche -->
             <div class="md:w-1/2 flex flex-col justify-center p-6">
@@ -284,6 +284,14 @@
         const menu = document.getElementById('navbar-menu');
         burger.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+        });
+
+        // Fermer le menu mobile quand on clique sur un lien (ancre)
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
         });
     </script>
     <script>

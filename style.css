@@ -1113,8 +1113,8 @@
     .nav-burger {
     display : none ;
       }
-    .hero-right-image-container {
-      display : block;
+    .hero-right {
+      display : flex;
     }
     }
 
@@ -1126,7 +1126,7 @@
     .nav-burger {
     display : flex ;  
     }
-    .hero-right-image-container {
+    .hero-right {
       display : none;
     }
      }

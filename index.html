@@ -1,381 +1,412 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UH5 ROUBAIX - Tirage Fine Art Encadrement Roubaix - Lille</title>
-    <meta name="description" content="UH5 ROUBAIX - Tirage Fine Art Encadrement Roubaix - Lille - UH5 c’est la réunion de passionnés et d’experts en matière de valorisation d’œuvres d’art.">
-    <meta property="locale" content="fr_FR">
-    <meta property="title" content="UH5 ROUBAIX - Tirage Fine Art Encadrement Roubaix - Lille">
-    <meta property="description" content="UH5 ROUBAIX - Tirage Fine Art Encadrement Roubaix - Lille - UH5 c’est la réunion de passionnés et d’experts en matière de valorisation d’œuvres d’art.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UH5 – Tirage Fine Art, Contrecollage & Encadrement à Lille</title>
+  <meta name="description" content="UH5 est un atelier spécialisé dans le tirage Fine Art, le contrecollage et l'encadrement sur-mesure à La Madeleine, près de Lille. Qualité muséale, grands formats, experts passionnés.">
+  <meta name="keywords" content="tirage fine art Lille, encadrement sur-mesure Nord, contrecollage photo Hauts-de-France, atelier photo Roubaix, impression pigmentaire Lille, encadreur Lille">
+  <link rel="canonical" href="https://www.uh5.fr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://github.com/ninefortyonestudio/uxnote/releases/download/v1.0.0/uxnote.min-v1.0.0.js"></script>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
 </head>
+
 <body>
-    <header class="sticky top-0 z-50">
-        <nav class="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <a href="index.html">
-                    <img src="./img/logo-uh5.webp" alt="UH5 Logo" class="h-10 w-auto"/>
-                </a>
-            </div>
-            <!-- Desktop Links -->
-            <div class="hidden md:flex space-x-8">
-                <a href="#identité" class="text-gray-700 hover:text-gray-500 ">UH5 identité</a>
-                <a href="#presentation" class="text-gray-700 hover:text-gray-500 ">Présentation</a>
-                <a href="#tirage-fine-art" class="text-gray-700 hover:text-gray-500 ">Tirage Fine Art</a>
-                <a href="#contrecollage" class="text-gray-700 hover:text-gray-500 ">Contrecollage</a>
-                <a href="#encadrement" class="text-gray-700 hover:text-gray-500 ">Encadrement</a>
-            </div>
-            <!-- Burger menu button -->
-            <button id="navbar-burger" class="md:hidden flex items-center px-2 py-1 rounded text-gray-700 focus:outline-none" aria-label="Ouvrir le menu">
-                <span id="burger-icon">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </span>
-                <span id="close-icon" class="hidden">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="6" y1="6" x2="18" y2="18" />
-                        <line x1="6" y1="18" x2="18" y2="6" />
-                    </svg>
-                </span>
-            </button>
-        </nav>
-        <!-- Mobile menu -->
-        <div id="navbar-menu" class="md:hidden hidden px-4 pb-4 bg-white border-b border-gray-200">
-            <a href="#identité" class="block py-2 text-gray-700 hover:text-gray-500 ">UH5 identité</a>
-            <a href="#presentation" class="block py-2 text-gray-700 hover:text-gray-500 ">Présentation</a>
-            <a href="#tirage-fine-art" class="block py-2 text-gray-700 hover:text-gray-500 ">Tirage Fine Art</a>
-            <a href="#contrecollage" class="block py-2 text-gray-700 hover:text-gray-500 ">Contrecollage</a>
-            <a href="#encadrement" class="block py-2 text-gray-700 hover:text-gray-500 ">Encadrement</a>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="/" class="nav-logo"><img class="nav-logo-img" src="img/logo-uh5.png" alt="Logo UH5"></a>
+    
+
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="tirage-contrecollage.html">Tirage & Contrecollage</a></li>
+      <li><a href="encadrement.html">Encadrement</a></li>
+     <!-- <li><a href="none">Journal</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Menu overlay -->
+  <div class="nav-menu" id="nav-menu" role="dialog" aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="tirage-contrecollage.html">Tirage & Contrecollage</a></li>
+      <li><a href="encadrement.html">Encadrement</a></li>
+    <!--  <li><a href="xx">Journal</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-menu-footer">
+      <div class="nav-menu-address">
+        85, rue Saint-Charles<br>
+        59110 La Madeleine
+      </div>
+      <div class="nav-menu-tel">
+        +33 6 43 56 63 55<br>
+        +33 6 10 52 23 51
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero split -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-grain"></div>
+      <div class="hero-left-content">
+        <span class="hero-eyebrow">Atelier d'encadrement d'art — Lille</span>
+        <h1 class="hero-title">L'art de valoriser<br><em>vos œuvres</em></h1>
+        <p class="hero-tagline">UH5 est un atelier de tirage photographique Fine Art et d'encadrement sur-mesure. L'exigence des matériaux, la minutie de l'exécution, le respect de votre œuvre.</p>
+        <a href="#contact" class="hero-cta">Nous contacter →</a>
+      </div>
+    </div>
+     <div class="hero-right">
+      <div class="hero-right-image-container">
+      <img src="img/PISCINE HUGO LAURENCE_DxO2.webp" alt="Atelier UH5 — Encadrement sur-mesure" class="hero-right-image">
+       <p class="hero-legende">Portrait de Laurence Pigeyre et tondo XXL de Hugo Laruelle au musée la piscine de Roubaix.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qui sommes-nous -->
+  <section class="about-section" id="qui">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">01</div>
+        <div>
+          <div class="section-label">L'atelier</div>
+          <h2 class="section-title">Une réunion<br><em>d'experts passionnés</em></h2>
         </div>
-    </header>
-    <main>
-        <img src="img/home.webp" alt="home image" class="w-full h-auto object-cover" fetchpriority="high" decoding="async" width="1920" height="700" />
-        <div class="mx-4 md:mx-30 lg:mx-48 text-center my-10">
-            <div class="opacity-0 scroll-fade fade-left">
-                <h1 id="identité" class="text-3xl scroll-mt-24">ATTENTION, NOUVELLE ADRESSE</h1>
-                <p><br>Retrouvez-nous au 85, rue Saint-Charles, 59110 La Madeleine, France <br><br>
-                    Si vous venez en voiture <br>
-                    GPS : En face du 78, rue Saint-Charles, 59110 La Madeleine, France <br> <br>
+      </div>
+      <div class="about-grid">
+        <div class="about-body">
+          <p>UH5 est née de la rencontre de deux expertises complémentaires: une photographe d'art infiniment exigeante sur la qualité technique et l'esthétique et un maître encadreur innovant.</p>
+          <p>Leur point commun : l'exigence dans le choix des matériaux, la minutie dans l'exécution, le soin des œuvres confiées, et une écoute active de l'artiste, de la galerie ou du collectionneur dans la mise en valeur de son œuvre.</p>
+          <p>L'atelier est implanté dans la métropole lilloise, au cœur d'un territoire à la scène artistique vivante, et collabore avec des galeries, des artistes et des institutions françaises et internationales.</p>
 
-                    Contact : <br>
-                    Laurence : +33 6 43 56 63 55 <br>
-                    Matthieu : +33 6 10 52 23 51
-                </p>
+          <div class="about-values">
+            <div class="about-value">
+              <span class="about-value-label">Matériaux</span>
+              <p>Sélectionnés pour leur qualité et sourcés de façon éthique et responsable.</p>
             </div>
-
-            <hr class="border-t border-gray-300 w-2/4 mx-auto my-6" />
-            <div class="opacity-0 scroll-fade fade-right"> 
-               <h1 class="text-3xl">QUE FAISONS-NOUS ?</h1>
-                <p><br>
-                Spécialisée dans le tirage Fine Art ainsi que dans l’encadrement et le contrecollage de toutes œuvres, UH5 a un savoir-faire particulier, y compris dans les grands formats et les challenges technico-artistiques.<br>
-                UH5 c’est la réunion d’experts passionnés en matière de valorisation d’œuvres d’art, de documents et d’objets d’importance.
-                </p>
+            <div class="about-value">
+              <span class="about-value-label">Exécution</span>
+              <p>Minutieuse, soignée, avec le respect dû à chaque œuvre confiée.</p>
             </div>
-            <hr class="border-t border-gray-300 w-2/4 mx-auto my-6" />
-            <div class="opacity-0 scroll-fade fade-left">            
-                <h1 class="text-3xl">QUI SOMMES-NOUS ?</h1>
-                <p><br>
-                    Une photographe d’art infiniment exigeante sur la qualité technique et l’esthétique de la production.<br>
-                    Un Encadreur maître de ses techniques et innovant.<br>
-                    Un monteur-colleur de haute expérience formé à l’école du tirage argentique.
-                </p>
-                <p>
-                    Nos points communs : L’exigence dans le choix des matériaux ; La minutie dans l’exécution et le soin des oeuvres confiées; La recherche d’un esthétisme d’ensemble et une écoute active de l’artiste, la galerie ou le collectionneur dans la mise en valeur de son œuvre.
-                </p>
+            <div class="about-value">
+              <span class="about-value-label">Conservation</span>
+              <p>Nous portons une attention particulière à la conservation des œuvres dans le temps.</p>
             </div>
-            <hr class="border-t border-gray-300 w-2/4 mx-auto my-6" />
-            <div class="opacity-0 scroll-fade fade-right">            
-                <h1 class="text-3xl">NOTRE ENGAGEMENT</h1>
-                <p><br>
-                    UH5 utilise des matériaux de très haute qualité, sourcés de façon responsable.<br>
-                    Mises en œuvre rapide et la plus économique possible par rapport au projet artistique.<br>
-                    UH5 s’est engagée à se développer à Roubaix et contribuer au renouveau économique de la ville.
-                </p>
+            <div class="about-value">
+              <span class="about-value-label">Écoute</span>
+              <p>Active et permanente — chaque projet est unique.</p>
             </div>
-        </div>
-        <div id="presentation" class="bg-zinc-100 md:scroll-mt-15 scroll-mt-7">
-            <div class="flex flex-col md:flex-row justify-center p-5 items-center md:items-start">
-                <!-- Personne 1 -->
-                <div class="flex flex-col items-center p-6 w-full max-w-xs">
-                    <img src="img/Laurence.webp" alt="Laurence Pigeyre" class="w-32 h-32 object-cover rounded-full" />
-                    <h2 class="text-xl font-bold">Laurence Pigeyre</h2>
-                    <p class="text-gray-600 mb-3 text-center">Photographe, Co-fondatrice & Présidente</p>
-                    <div class="flex space-x-4 mt-2">
-                        <a href="mailto:laurence@uh5.fr" aria-label="Mail" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"/></svg>
-                        </a>
-                        <a href="https://fr-fr.facebook.com/laurencepigeyrephoto/" aria-label="Facebook" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.92.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0"/></svg>
-                        </a>
-                        <a href="https://fr.linkedin.com/in/laurencepigeyre" aria-label="LinkedIn" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M8 11v5M8 8v.01M12 16v-5m0 0a2 2 0 114 0v5"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <!-- Personne 2 -->
-                <div class="flex flex-col items-center p-6 w-full max-w-xs">
-                    <img src="img/Matthieu.webp" alt="Matthieu Dujardin" class="w-32 h-32 object-cover rounded-full" />
-                    <h2 class="text-xl font-bold">Matthieu Dujardin</h2>
-                    <p class="text-gray-600 mb-3">Maître encadreur & Co-fondateur</p>
-                    <div class="flex space-x-4 mt-2">
-                        <a href="mailto:matthieu@uh5.fr" aria-label="Mail" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"/></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/matthieu-dujardin-44005516b" aria-label="LinkedIn" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M8 11v5M8 8v.01M12 16v-5m0 0a2 2 0 114 0v5"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <!-- Personne 3 -->
-                <div class="flex flex-col items-center  p-6 w-full max-w-xs">
-                    <img src="img/Sargis.webp" alt="Sargis Gyulamiryan" class="w-32 h-32 object-cover rounded-full" />
-                    <h2 class="text-xl font-bold">Sargis Gyulamiryan</h2>
-                    <p class="text-gray-600 mb-3">Menuisier Ebéniste</p>
-                    <div class="flex space-x-4 mt-2">
-                        <a href="mailto:sargis@uh5.fr" aria-label="Mail" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"/></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/matthieu-dujardin-44005516b" aria-label="LinkedIn" class="text-gray-500 hover:text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M8 11v5M8 8v.01M12 16v-5m0 0a2 2 0 114 0v5"/></svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="about-value">
+              <span class="about-value-label">Territoire</span>
+              <p>Engagés dans le renouveau culturel et économique des Hauts-de-France.</p>
             </div>
-        </div>
-        <div class="flex flex-col md:flex-row gap-6 scroll-mt-15" id="tirage-fine-art">
-
-            <!-- Colonne gauche -->
-            <div class="md:w-1/2 flex flex-col justify-center p-6">
-                <h2 class="text-2xl font-bold mb-3">TIRAGE FINE ART</h2>
-                <p class="text-gray-700">
-                    L’impression pigmentaire, sophistiquée et précise, utilise des encres d’archivage qui résistent dans le temps.
-                    Ce procédé d’impression incorpore des particules de pigments raffinées, résilientes aux effets environnementaux et n’utilise aucun solvant. <br><br>
-                </p>
-                <p class="text-gray-700">
-                    Notre expert(e) pourra, si vous le souhaitez, apporter sa technicité et sa fine connaissance des logiciels d’édition photo et tirage pour optimiser le rendu artistique et lumineux de votre photographie. <br><br>
-                </p>
-                <p class="text-gray-700">
-                    Nous réalisons des tirages en qualité muséale sur une large gamme de papiers naturels et canvas, jusqu’à 160cm de laize.
-                    Ce savoir-faire, couplé à nos capacités de montage/contrecollage rend possible les projets photographiques les plus ambitieux.
-                </p>
-            </div>
-
-            <!-- Colonne droite : image pleine hauteur -->
-            <div class="md:w-1/2 h-64 md:h-auto">
-                <img 
-                    src="./img/TIRAGE-FINE-ART.webp" 
-                    alt="TIRAGE FINE ART" 
-                    class="w-full h-full object-cover"
-                >
-            </div>
-
-        </div>
-        <div class="flex flex-col md:flex-row-reverse gap-6 scroll-mt-15" id="contrecollage">
-
-            <!-- Colonne gauche -->
-            <div class="md:w-1/2 flex flex-col justify-center p-6">
-                <h2 class="text-2xl font-bold mb-3">CONTRECOLLAGE</h2>
-                <p class="text-gray-700">
-                    Le contrecollage consiste en un assemblage de plusieurs couches de finition, de support et de protection.<br><br>
-                </p>
-                <p class="text-gray-700">
-                    L’oeuvre est très soigneusement contrecollée (sans solvant) par notre expert sur un support rigide (Carton, PVC, Kapa-mount, Dibond…) dans le but d’apporter une belle épaisseur et « de la main ».
-                    Cette épaisseur en fera sa rigidité, son élégance, sa légèreté, sa durabilité.
-                    L’oeuvre, pourra ensuite être encadrée ou laissée telle quelle avec ou sans effets de bordure, à convenir selon le projet.
-                </p>
-            </div>
-
-            <!-- Colonne droite : image pleine hauteur -->
-            <div class="md:w-1/2 h-64 md:h-auto">
-                <img 
-                    src="./img/CONTRECOLLAGE.webp" 
-                    alt="CONTRECOLLAGE" 
-                    class="w-full h-full object-cover"
-                >
-            </div>
-
-        </div>
-        <div class="flex flex-col md:flex-row gap-6 scroll-mt-15" id="encadrement">
-
-            <!-- Colonne gauche -->
-            <div class="md:w-1/2 flex flex-col justify-center p-6">
-                <h2 class="text-2xl font-bold mb-3">ENCADREMENT SUR-MESURE</h2>
-                <p class="text-gray-700">
-                    La fonction première de l’encadrement est de protéger et de mettre en valeur l’oeuvre.<br><br>
-                </p>
-                <p class="text-gray-700">
-                        La connaissance des arts, du style, des techniques et des matières est essentielle pour déterminer les matériaux à utiliser : UH5 maîtrise la réalisation de tous les types d’encadrements, des techniques classiques jusqu’aux dernières innovations.
-                </p>
-            </div>
-
-            <!-- Colonne droite : image pleine hauteur -->
-            <div class="md:w-1/2 h-64 md:h-auto">
-                <img 
-                    src="./img/ENCADREMENT.webp" 
-                    alt="ENCADREMENT SUR-MESURE" 
-                    class="w-full h-full object-cover"
-                >
-            </div>
-
-        </div>
-        <h1 class="text-3xl text-center m-6">NOTRE ATELIER</h1>
-        <div class="relative w-full md:min-h-[400px] h-64 overflow-hidden my-5">
-
-            <!-- Groupe 1 -->
-            <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-1">
-                <img src="img/f.webp" class="w-full object-cover p-4" alt="Atelier UH5 - vue 1">
-                <img src="img/i.webp" class="w-full object-cover p-4" alt="Atelier UH5 - vue 2">
-                <img src="img/e.webp" class="w-full object-cover p-4" alt="Atelier UH5 - vue 3">
-            </div>
-
-            <!-- Groupe 2 -->
-            <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-2">
-                <img src="img/b.webp" class="w-full object-cover p-4" alt="Atelier UH5 - vue 4">
-                <img src="img/a.webp" class="w-full object-cover p-4" alt="Atelier UH5 - vue 5">
-                <img src="img/d.webp" class="w-full object-cover p-4" alt="Tirage Fine Art UH5">
-            </div>
-
-            <!-- Groupe 3 -->
-            <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-3">
-                <img src="img/g.webp" class="w-full object-cover p-4" alt="Contrecollage UH5">
-                <img src="img/h.webp" class="w-full object-cover p-4" alt="Encadrement UH5">
-                <img src="img/c.webp" class="w-full object-cover p-4" alt="Atelier UH5 - vue 6">
-            </div>
-
+          </div>
         </div>
 
-
-        </div>
-        <!-- Section Avis Clients -->
-        <!-- <section id="avis-clients" class="mx-4 md:mx-30 lg:mx-48 my-10">
-            <h2 class="text-3xl text-center mb-6">AVIS CLIENTS</h2>
-            <div class="flex flex-col gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
-
-                <div class="bg-white rounded-lg shadow p-6 flex flex-col justify-between">
-                    <div class="flex items-center mb-2">
-                        <span class="font-semibold text-lg">Mai Khanh Pham To </span>
-                        <span class="ml-2 text-yellow-500">★★★★★</span>
-                    </div>
-                    <p class="text-gray-700 italic">Encadrement de haute qualité, accueil et conseil excellents avec une attention particulière à la conservation optimale des œuvres. Éthique et durable. Je recommande très vivement.</p>
-                    <span class="text-xs text-gray-700 mt-2">Avis Google</span>
-                </div>
-                <div class="bg-white rounded-lg shadow p-6 flex flex-col justify-between">
-                    <div class="flex items-center mb-2">
-                        <span class="font-semibold text-lg">Natalia</span>
-                        <span class="ml-2 text-yellow-500">★★★★★</span>
-                    </div>
-                    <p class="text-gray-700 italic">J'ai commandé la tension et la pose de la toile sur châssis parce que ma toile était dans mauvais état. Je suis très contente de la résultat car tous les plis ont disparu. Très bon travail !</p>
-                    <span class="text-xs text-gray-700 mt-2">Avis Google</span>
-                </div>
-                <div class="bg-white rounded-lg shadow p-6 flex flex-col justify-between">
-                    <div class="flex items-center mb-2">
-                        <span class="font-semibold text-lg">Christine Leclercq</span>
-                        <span class="ml-2 text-yellow-500">★★★★★</span>
-                    </div>
-                    <p class="text-gray-700 italic">Un travail de très grande qualité, beaucoup d'écoute et d'attention.Un lieu où on aime vraiment l'art et les artistes.Bravo et merci à toute l'équipe!!!</p>
-                    <span class="text-xs text-gray-700 mt-2">Avis Google</span>
-                </div>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="team-member-info">
+              <div class="team-member-role">Photographe d'art · Co-fondatrice & Présidente</div>
+              <div class="team-member-name">Laurence Pigeyre</div>
+              <p class="team-member-desc">Exigence technique et esthétique de la production. Gestion colorimétrique, préparation des fichiers, œil artistique sur chaque tirage.</p>
             </div>
-            <div class="text-center mt-6">
-                <a href="https://www.google.com/maps/place/UH5+Encadrement+d'art+Tirage+Fine+Art/@50.6647405,3.0656835,17z/data=!4m16!1m9!3m8!1s0x47c32920db5fde93:0xdf260c66d2ce72e7!2sUH5+Encadrement+d'art+Tirage+Fine+Art!8m2!3d50.6647405!4d3.0682638!9m1!1b1!16s%2Fg%2F11g230c2hs!3m5!1s0x47c32920db5fde93:0xdf260c66d2ce72e7!8m2!3d50.6647405!4d3.0682638!16s%2Fg%2F11g230c2hs?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-600 underline hover:text-blue-800">Voir tous les avis sur Google</a>
+            <div class="team-member-initial">L</div>
+          </div>
+          <div class="team-member">
+            <div class="team-member-info">
+              <div class="team-member-role">Maître encadreur · Co-fondateur</div>
+              <div class="team-member-name">Matthieu Dujardin</div>
+              <p class="team-member-desc">Maîtrise de toutes les techniques d'encadrement, des plus classiques aux plus contemporaines. Innovant, rigoureux, attentif à chaque détail.</p>
             </div>
-        </section> -->
-        <!-- Fin section Avis Clients -->
-        </main>
-    <footer class="bg-black/80 text-white py-8">
-        <div class="flex justify-center gap-6 mb-4">
+            <div class="team-member-initial">M</div>
+          </div>
+          <div class="team-member">
+            <div class="team-member-info">
+              <div class="team-member-role">Menuisier ébéniste</div>
+              <div class="team-member-name">Sargis Gyulamiryan</div>
+              <p class="team-member-desc">Haute expérience du montage et du contrecollage. Précision et soin des matériaux.</p>
+            </div>
+            <div class="team-member-initial">S</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/uh5roubaix/" aria-label="Facebook" class="hover:opacity-70 transition">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-white" viewBox="0 0 24 24">
-                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
-                </svg>
-            </a>
+  <!-- Services -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">02</div>
+        <div>
+          <div class="section-label">Nos services</div>
+          <h2 class="section-title">Trois expertises,<br><em>un seul atelier</em></h2>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-num">01 ·</div>
+          <h3>Tirage Fine Art</h3>
+          <p>Impression qualité muséale pigmentaire avec des encres d'archivage sans solvant, résistantes dans le temps. Sur une large gamme de papiers naturels et canvas, jusqu'à 160 cm de laize.</p>
+          <div class="service-specs">
+            <span class="service-spec">Impression pigmentaire</span>
+            <span class="service-spec">Encres d'archivage longue durée</span>
+            <span class="service-spec">Laize jusqu'à 160 cm</span>
+            <span class="service-spec">Qualité muséale</span>
+          </div>
+          <a href="tirage-contrecollage.html" class="service-card-link">Découvrir →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-num">02 ·</div>
+          <h3>Contrecollage</h3>
+          <p>Assemblage soigné de l'œuvre sur support rigide, sans solvant. Dibond, PVC, Kapa-mount, carton… L'épaisseur et la main qui font toute la présence physique d'une image.</p>
+          <div class="service-specs">
+            <span class="service-spec">Sans solvant</span>
+            <span class="service-spec">Dibond, PVC, Kapa-mount, carton</span>
+            <span class="service-spec">Bords et finitions soignés</span>
+            <span class="service-spec">Planéité parfaite</span>
+          </div>
+          <a href="tirage-contrecollage.html" class="service-card-link">Découvrir →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-num">03 ·</div>
+          <h3>Encadrement sur-mesure</h3>
+          <p>Des techniques classiques jusqu'aux dernières innovations. La connaissance des arts, des styles et des matières, au service de la protection et de la mise en valeur de votre œuvre.</p>
+          <div class="service-specs">
+            <span class="service-spec">Toutes techniques maîtrisées</span>
+            <span class="service-spec">Caisses américaines, baguettes métal & bois</span>
+            <span class="service-spec">Verre musée anti-reflet</span>
+            <span class="service-spec">Conservation pH neutre</span>
+          </div>
+          <a href="encadrement.html" class="service-card-link">Découvrir →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/uh5_roubaix/" aria-label="Instagram" class="hover:opacity-70 transition">
-                <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z" 
-                        stroke="#ffffff" stroke-width="2"></path>
-                    <circle cx="16.5" cy="7.5" r="1.5" fill="#ffffff"></circle>
-                    <circle cx="12" cy="12" r="3" stroke="#ffffff" stroke-width="2"></circle>
-                </svg>
-            </a>
+  <!-- Engagements -->
+  <section class="engagement-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">03</div>
+        <div>
+          <div class="section-label">Notre engagement</div>
+          <h2 class="section-title">Ce qui nous guide</h2>
+        </div>
+      </div>
+      <div class="engagement-grid">
+        <div class="engagement-item">
+          <div class="engagement-num">I</div>
+          <h3>Exigence des matériaux</h3>
+          <p>Bis et des matériaux de grande qualité issus d'exploitations éthiques et responsables.</p>
+        </div>
+        <div class="engagement-item">
+          <div class="engagement-num">II</div>
+          <h3>Audace et élégance</h3>
+          <p>Nous concevons des cadres uniques adaptés à chaque œuvre, aux finitions soignées.</p>
+        </div>
+        <div class="engagement-item">
+          <div class="engagement-num">IV</div>
+          <h3>Conservation des œuvres</h3>
+          <p>Verre musée, matériaux non acides, colles et encres d'archivage</p>
+        </div>
+        <div class="engagement-item">
+          <div class="engagement-num">IV</div>
+          <h3>Projets hors-norme</h3>
+          <p>Grands formats, œuvres fragiles, challenges technico-artistiques — c'est le terrain sur lequel nous excellons.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <section class="divide-section"></section>
+
+  <!-- ─── SECTION RÉFÉRENCES ─── -->
+
+<!-- Remplacer les noms de clients, les src des images, et le témoignage -->
+
+<section class="ref-section">
+  <div class="container">
+
+    <div class="ref-header">
+      <div class="ref-num">04</div>
+      <div>
+        <div class="ref-label">Ils nous font confiance</div>
+        <h2 class="ref-title">Artistes, galeries<br><em>& collectionneurs</em></h2>
+        <h3 class="ref-subtitle">Nous travaillons chaque semaine avec nos clients à Paris, Lille, Bruxelles et au delà.</h2>
+      </div>
+    </div>
+
+    <div class="ref-body">
+
+      <!-- Photos de réalisations -->
+      <div class="ref-photos">
+        <div class="ref-photo ref-photo--large">
+          <img src="img/ref-boite_DxO2.webp" alt="Réalisation UH5 — tirage Fine Art">
+        </div>
+        <div class="ref-photo">
+          <img src="img/ref_mai_DxO2.webp" alt="Réalisation UH5 — contrecollage">
+        </div>
+        <div class="ref-photo">
+          <img src="img/ref-cadres_DxO2.webp" alt="Réalisation UH5 — encadrement">
+        </div>
+        
+      </div>
+
+      <div class="ref-right">
+
+        <!-- Liste des clients -->
+        <div class="ref-clients">
+          <div class="ref-clients-label">Nos clients</div>
+          <div class="ref-clients-list">
+            <span class="ref-client-name"><b>Galerie Bacqueville</b></span><span class="ref-client-sep"></span>
+     <span class="ref-client-name">Cédric Carré</span><span class="ref-client-sep"></span>      
+<span class="ref-client-name">Charles Petillon</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">David Coppieters</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">David De Beyter</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Didier Knoff</span><span class="ref-client-sep"></span>
+<span class="ref-client-name"><b>Galerie Kreo</b></span></span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Dominique Grisor</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Eric Flogny</span><span class="ref-client-sep"></span>
+<span class="ref-client-name"><b>Frac grand Large</b></span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Gaël Davrinche</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Gilles Decavel</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Hugo Laruelle</span><span class="ref-client-sep"></span>
+<span class="ref-client-name"><b>Institut pour la Photographie</b></span><span class="ref-client-sep"></span>
+<span class="ref-client-name"><b>Galerie Pauline Renard</b></span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Mai Khanh Pham To</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Marie-Jeanne Neirynck</span><span class="ref-client-sep"></span>
+<span class="ref-client-name"><b>Galerie Renard Hacker</b></span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Ronan Bouroullec</span><span class="ref-client-sep"></span>
+<span class="ref-client-name"><b>Galerie Sinople</b></span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Thomas Dhellemmes</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Yosra Mojtahedi</span><span class="ref-client-sep"></span>
+<span class="ref-client-name">Youri Leroux</span>
+          </div>
         </div>
 
-        <p class="text-center text-gray-400 text-sm">
-            © 2026 UH5 – 
-            <a href="mentions-legales.html" class="underline hover:text-white transition">
-                Mentions Légales
-            </a>
-        </p>
-    </footer>
+        <!-- Témoignage -->
+        <div class="ref-testimonial">
+          <div class="ref-testimonial-text">
+            Un art plein d'amour, de soin et d'attention. Merci encore infiniment pour cet accompagnement sublime.
+               </div>
+          <div class="ref-testimonial-author">
+            <div class="ref-testimonial-name">Yosra Mojtahedi</div>
+            <div class="ref-testimonial-role">Artiste contemporaine, Paris</div>
+          </div>
+        </div>
 
-    <script>
-        // Burger menu toggle + croix
-        const burger = document.getElementById('navbar-burger');
-        const menu = document.getElementById('navbar-menu');
-        const burgerIcon = document.getElementById('burger-icon');
-        const closeIcon = document.getElementById('close-icon');
+      </div>
+    </div>
 
-        function toggleMenu() {
-            menu.classList.toggle('hidden');
-            const isOpen = !menu.classList.contains('hidden');
-            if (isOpen) {
-                burgerIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
-            } else {
-                burgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        }
+  </div>
+</section>
 
-        burger.addEventListener('click', toggleMenu);
 
-        // Fermer le menu mobile quand on clique sur un lien (ancre)
-        const mobileLinks = menu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-                burgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const elements = document.querySelectorAll(".scroll-fade");
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
+  <!-- CTA / Contact -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-left">
+          
+          <h2 class="cta-title">Discutons de<br><em>votre projet</em></h2>
+          <p class="cta-text">Photographes, galeries, collectionneurs, décorateurs — apportez votre fichier ou votre œuvre. Nous vous proposons une consultation sans engagement dans notre atelier à La Madeleine.</p>
+          <div class="cta-buttons">
+            <a href="/cdn-cgi/l/email-protection#90f3fffee4f1f3e4d0e5f8a5bef6e2" class="btn-primary">Nous contacter →</a>
+            </div>
+        </div>
+        <div class="cta-right">
+          <div class="contact-block">
+            <div class="contact-block-title">Nous joindre</div>
+            <div class="contact-person">
+              <span class="contact-name">Par mail</span>
+              <span class="contact-tel">contact@uh5.fr</span>
+            </div>
+            <div class="contact-person">
+              <span class="contact-name">Laurence Pigeyre</span>
+               <span><a class="contact-tel" href="tel:0643566355">+33 6 43 56 63 55</a></span>
+            </div>
+            <div class="contact-person">
+              <span class="contact-name">Matthieu Dujardin</span>
+              <span><a class="contact-tel" href="tel:0610522351">+33 6 10 52 23 51</a></span>
+            </div>
+          </div>
+          <div class="address-block">
+            <div class="address-title">Atelier</div>
+            <div class="address-text">
+              85, rue Saint-Charles<br>
+              59110 La Madeleine<br>
+              GPS : en face du 78, rue Saint-Charles
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                        if (entry.target.classList.contains("fade-down")) {
-                            entry.target.classList.add("animate-fadeInDown");
-                        }
-                        if (entry.target.classList.contains("fade-left")) {
-                            entry.target.classList.add("animate-fadeInLeft");
-                        }
-                        if (entry.target.classList.contains("fade-right")) {
-                            entry.target.classList.add("animate-fadeInRight");
-                        }
+  <!-- Footer -->
+<footer>
+    <span class="footer-logo"><img class="nav-logo-img" src="img/logo-uh5-w.png" alt="Logo UH5"></span>
+    
+    
+    <ul class="footer-links">
+      <li><a href="https://www.instagram.com/uh5_roubaix/">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/company/uh5/">Linkedin</a></li>
+      <li><a href="mentions_legales.html">Mentions légales</a></li>
+      </ul>
+  </footer>
 
-                        entry.target.classList.remove("opacity-0");
-                        observer.unobserve(entry.target); // animation une seule fois
-                    }
-                });
-            }, { threshold: 0.2 });
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('nav-menu');
 
-            elements.forEach(el => observer.observe(el));
-        });
-        </script>
+    burger.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('is-open');
+      burger.classList.toggle('is-open', isOpen);
+      burger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Fermer le menu au clic sur un lien
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Fermer avec Échap
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        menu.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        burger.focus();
+      }
+    });
+  </script>
 
 </body>
 </html>

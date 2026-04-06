@@ -1082,8 +1082,11 @@
       .hero-right { padding: 3rem 1.5rem; }
       .hero-right-top { position: static; margin-bottom: 2rem; }
       .container { padding: 0 1.5rem; }
-      section { padding: 4rem 0; }
+      section { padding: 1rem 0; }
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .tirage-grid { grid-template-columns: 1fr; }
+      .cc-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; }
       .engagement-grid { grid-template-columns: 1fr 1fr; }
       .section-header { gap: 1.5rem; }
